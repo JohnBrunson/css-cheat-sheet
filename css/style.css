@@ -1,0 +1,73 @@
+/* Various style definitions */
+:root {
+    --dark-mode: #24282c;
+    --text-color: #fff;
+    --accent-color: #8f04ca; 
+}
+/*Use this class to apply a gradient. Not thrilled with the color choice, maybe shoot for a blue later? Right now, get it working...*/
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6)100%);
+}
+
+/* Now styling the HTML... */
+h1 {
+    color: var(--accent-color);
+}
+
+p {
+    color: var(--text-color);
+}
+html {
+    background-color: var(--dark-mode);
+    color: var(var(--text-color));
+} 
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.subheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--dark-mode);
+    color: var(--text-color);
+    border: 1px dashed white;
+}
+
+/* Placeholders for styling classes within the card... TODO: Either add stuff here or pull the classes. */
+.card-header {
+
+}
+
+.card-header h2 {
+    border: 1px solid red;
+}
+
+.card-body {
+
+}
+
+footer {
+    position: absolute;
+    margin: 0 auto;
+}
+/*TODO: Implement media instructions for mobile devices.  */
+
+/*media to control for Mobile Devices. */
+
+/* @media screen and (max-width:992 px);{
+    
+}
+@media screen and (max-width:768 px);{
+    
+} */
